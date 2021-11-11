@@ -1,0 +1,44 @@
+@import 'variables.scss';
+
+
+#app {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: ($padding-y / 2) 0;
+
+    img.logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        padding: $padding-y 0;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: $text-primary;
+            font-weight: 600;
+            margin: ($padding-y / 2);
+            font-size: 12px;
+
+            &.active {
+                color: $brand-color;
+                border-bottom: 5px solid $brand-color;
+                padding-bottom: 20px;
+                // width: 100%;
+                // height: 15px;
+                // position: absolute;
+                // bottom: 0;
+            }
+        }
+    }
+}
