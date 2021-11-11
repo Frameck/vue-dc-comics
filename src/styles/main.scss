@@ -34,11 +34,63 @@
                 color: $brand-color;
                 border-bottom: 5px solid $brand-color;
                 padding-bottom: 20px;
-                // width: 100%;
-                // height: 15px;
-                // position: absolute;
-                // bottom: 0;
             }
+        }
+    }
+}
+
+
+.main-container {
+    main {
+        background-color: rgb(34, 34, 34);
+        padding: $padding-y * 2;
+
+        div {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+.blue-section-container {
+    padding: ($padding-y * 2) 0;
+    background-color: $brand-color;
+    display: flex;
+    gap: 30px;
+    font-size: 15px;
+    font-weight: bold;
+
+    .buy-section {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: white;
+
+        img {
+            width: 60px;
+        }
+    }
+}
+
+
+.footer-container {
+    background-image: url(./assets/footer-bg.jpg);
+
+    ul {
+        list-style: none;
+        text-align: left;
+        color: white;
+
+        h3 {
+            font-size: 22px;
+            letter-spacing: -1px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(203, 203, 203);
         }
     }
 }
