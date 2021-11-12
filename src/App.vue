@@ -4,6 +4,7 @@
     <Main></Main>
     <BlueSection></BlueSection>
     <Footer></Footer>
+    <Social></Social>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import BlueSection from './components/BlueSection.vue'
 import Footer from './components/Footer.vue'
+import Social from './components/Social.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     Header,
     Main,
     BlueSection,
-    Footer
+    Footer,
+    Social
   }
 }
 </script>

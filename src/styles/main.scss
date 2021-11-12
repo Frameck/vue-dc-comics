@@ -10,9 +10,14 @@
 .main-header,
 .main,
 .blue-section,
-.footer {
+.footer,
+.social-section {
     width: 1200px;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 .main-header {
@@ -34,7 +39,6 @@
         gap: 20px;
 
         a {
-            text-decoration: none;
             color: $text-primary;
             font-weight: 600;
             margin: ($spacing-y / 2);
@@ -57,7 +61,7 @@
         padding: ($spacing-y * 2) 0;
 
         div {
-            color: white;
+            color: $text-white;
             font-size: 30px;
             font-weight: bold;
         }
@@ -79,7 +83,7 @@
         .buy-section {
             display: flex;
             align-items: center;
-            color: white;
+            color: $text-white;
             gap: 15px;
     
             img {
@@ -120,7 +124,7 @@
     ul {
         list-style: none;
         text-align: left;
-        color: white;
+        color: $text-white;
 
         h3 {
             font-size: 22px;
@@ -130,8 +134,48 @@
         }
 
         a {
-            text-decoration: none;
             color: rgb(203, 203, 203);
+        }
+    }
+}
+
+
+.social-container {
+    background-color: $color-grey;
+    padding: ($spacing-y * 1.5) 0;
+
+    .social-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            background-color: transparent;
+            border: 2px solid $brand-color;
+            padding: $spacing-x / 1.5;
+
+            a {
+                color: $text-white;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: $spacing-x;
+
+            img {
+                width: 40px;
+            }
+
+            .follow {
+                color: $brand-color;
+                font-size: 20px;
+                font-weight: bold;
+            }
         }
     }
 }
