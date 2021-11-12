@@ -6,7 +6,8 @@
             <li v-for="item,i in navbarItems" :key="i">
               <a 
               :href="item.href + item.text"
-              :class="i === currentActive ? 'active' : ''">
+              :class="i === currentActive ? 'active' : ''"
+              @click.prevent="currentActive = i">
                 {{ item.text.toUpperCase() }}
               </a>
             </li>

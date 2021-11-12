@@ -1,8 +1,10 @@
 <template>
     <div class="blue-section-container">
-        <div class="buy-section" v-for="item,i in buyItems" :key="i">
-            <img v-bind:src="'../assets/' + item.fileName + '.png'" :alt="item.text">
-            <div>{{ item.text.toUpperCase() }}</div>  
+        <div class="blue-section">
+            <div class="buy-section" v-for="item,i in buyItems" :key="i">
+                <img v-bind:src="require('../assets/' + item.fileName + '.png')" :alt="item.text">
+                <div>{{ item.text.toUpperCase() }}</div>  
+            </div>
         </div>
     </div>
 </template>
@@ -15,7 +17,7 @@ export default {
             buyItems: [
                 {
                     text: 'digital comics',
-                    fileName: '../assets/buy-comics-digital-comics.png'
+                    fileName: 'buy-comics-digital-comics'
                     // '../assets/buy-comics-digital-comics.png'
                 },
                 {

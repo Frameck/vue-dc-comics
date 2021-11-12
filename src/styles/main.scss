@@ -1,7 +1,16 @@
 @import 'variables.scss';
 
 
-#app {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-header,
+.main,
+.blue-section,
+.footer {
     width: 1200px;
     margin: 0 auto;
 }
@@ -10,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: ($padding-y / 2) 0;
+    padding: 19px 0;
 
     img.logo {
         width: 70px;
@@ -20,20 +29,21 @@
     ul {
         list-style: none;
         display: flex;
-        padding: $padding-y 0;
+        margin: 0;
+        padding: $spacing-y 0;
         gap: 20px;
 
         a {
             text-decoration: none;
             color: $text-primary;
             font-weight: 600;
-            margin: ($padding-y / 2);
+            margin: ($spacing-y / 2);
             font-size: 12px;
 
             &.active {
                 color: $brand-color;
                 border-bottom: 5px solid $brand-color;
-                padding-bottom: 20px;
+                padding-bottom: $spacing-y * 2;
             }
         }
     }
@@ -41,9 +51,10 @@
 
 
 .main-container {
-    main {
-        background-color: rgb(34, 34, 34);
-        padding: $padding-y * 2;
+    background-color: rgb(34, 34, 34);
+
+    .main {
+        padding: ($spacing-y * 2) 0;
 
         div {
             color: white;
@@ -55,21 +66,39 @@
 
 
 .blue-section-container {
-    padding: ($padding-y * 2) 0;
+    padding: ($spacing-y * 2) 0;
     background-color: $brand-color;
-    display: flex;
-    gap: 30px;
     font-size: 15px;
     font-weight: bold;
 
-    .buy-section {
+    .blue-section {
         display: flex;
-        align-items: center;
-        gap: 20px;
-        color: white;
+        justify-content: space-between;
+        gap: 30px;
 
-        img {
-            width: 60px;
+        .buy-section {
+            display: flex;
+            align-items: center;
+            color: white;
+            gap: 15px;
+    
+            img {
+                width: 60px;
+            }
+
+            &:nth-child(1) {
+                img {
+                    width: auto;
+                    height: 60px;
+                }
+            }            
+
+            &:nth-child(4) {
+                img {
+                    width: auto;
+                    height: 60px;
+                }
+            }
         }
     }
 }
@@ -77,6 +106,16 @@
 
 .footer-container {
     background-image: url(./assets/footer-bg.jpg);
+    padding: ($spacing-y * 2) 0;
+
+    .list-container {
+        display: flex;
+
+        .list-container-middle,
+        .list-container-right {
+            margin-left: $spacing-x * 1.5;
+        }
+    }
 
     ul {
         list-style: none;
@@ -86,6 +125,8 @@
         h3 {
             font-size: 22px;
             letter-spacing: -1px;
+            margin-top: 0;
+            margin-bottom: 10px;
         }
 
         a {
