@@ -34,6 +34,11 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- dc_logo_bg -->
+                <div class="background-container">
+                    <img src="../assets/dc-logo-bg.png" alt="dc_logo_bg">
+                </div>
             </div>
         </footer>
   </div>

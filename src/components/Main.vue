@@ -1,20 +1,24 @@
 <template>
   <div class="main-container">
       <main class="main">
-          <div>Content goes here</div>
+          <div class="banner">
+              <h4>CURRENT SERIES</h4>
+          </div>
+
+          <CardsContainer></CardsContainer>
+
+          <button><a href="#">LOAD MORE</a></button>
       </main>
   </div>
 </template>
 
 <script>
-import jsonData from '../database/dc-comics.json'
+import CardsContainer from '../components/CardsContainer.vue'
 
 export default {
     name: 'Main',
-    data() {
-        return {
-            dcList: jsonData
-        }
+    components: {
+        CardsContainer
     }
 }
 </script>
